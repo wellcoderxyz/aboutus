@@ -617,21 +617,20 @@ footer img {
 
 /* Each slide within the slider */
 .slider-single {
-    min-width: 100%; /* Ensures each slide takes up the full width of the container */
-    box-sizing: border-box; /* Includes padding and border in element’s total width */
-    display: flex; /* Aligns children (image and text) vertically */
-    flex-direction: column; /* Aligns children (image and text) vertically */
-    align-items: center; /* Center-aligns children horizontally */
-    justify-content: center; /* Center-aligns children vertically */
-    padding: 10px; /* Padding around each slide */
-    text-align: center; /* Center-aligns text */
-}
+    min-width: 100%; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    text-align: center; 
 
-/* Style for images in the slider */
+
 .slider-single-image {
-    max-width: 100%; /* Limits width to container's width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
     max-height: 400px;  
     border-radius: 10px; 
 }
@@ -656,40 +655,40 @@ footer img {
 }
 
 .slider-single img {
-    width: 100%; /* Adjust image width to fit slider */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures images cover the container */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 .slider-single-title {
-    font-size: 16px; /* Adjust font size for titles */
+    font-size: 16px; 
 }
 
 .slider-single-likes {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5px; /* Adjust margin */
+    margin-top: 5px; 
 }
 
 .slider-single-likes i {
-    color: #B79A88; /* Icon color */
+    color: #B79A88; 
     margin-right: 5px;
 }
 
 .slider-single-likes p {
-    font-size: 12px; /* Adjust font size for descriptions */
-    color: #B79A88; /* Text color */
+    font-size: 12px; 
+    color: #B79A88; 
 }
 
-/* Title and description styles */
+
 .slider-single-title {
-    font-size: 20px; /* Adjust as needed */
-    margin: 10px 0; /* Margin above and below the title */
+    font-size: 20px; 
+    margin: 10px 0; 
 }
 
 .slider-single-likes {
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px; 
 }
 
 /* Optional: Responsive adjustments */
