@@ -58,7 +58,7 @@
             
         </div>
         <video autoplay muted loop id="myVideo">
-            <source src="images/Suzume (261).mp4" type="video/mp4">
+            <source src="Suzume (261).mp4" type="video/mp4">
           </video>
     </div>
 
