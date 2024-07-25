@@ -29,7 +29,7 @@
         <div class="links">
             <ul class="flex">
                 <li class="flex">Home</li> 
-                <li class="flex"><a href="ABOUTT.html"about us</li>
+                <li class="flex">"about us</li>
                 <li class="flex"><img src="./images/IEEE_logo.png" alt="" style="filter: brightness(0) invert(1);"></li>
                 <li class="flex">Contact</li>
                 <li class="flex">Sponsers</li>
