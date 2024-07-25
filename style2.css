@@ -559,60 +559,60 @@ footer img {
     border-radius: 10px; 
 }
 
-/* Individual offer item */
+
 .eachOffer {
     display: flex;
-    flex-direction: column; /* Aligns items (image and description) vertically */
-    align-items: center; /* Center-aligns children horizontally */
-    text-align: center; /* Center-aligns text */
-    background-color: #444; /* Optional: background color for each offer */
-    padding: 20px; /* Padding inside each offer */
-    border-radius: 10px; /* Optional: rounded corners */
-    flex: 1 1 calc(33% - 40px); /* Responsive sizing: 3 items per row with space for gaps */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    background-color: #444; /
+    padding: 20px; 
+    border-radius: 10px; 
+    flex: 1 1 calc(33% - 40px); 
+    box-sizing: border-box; 
 }
 
-/* Image styling within each offer */
+
 .eachOffer img {
-    width: 100px; /* Adjust width of icons */
-    height: auto; /* Maintains aspect ratio */
-    margin-bottom: 15px; /* Space below the image */
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 15px; 
 }
 
-/* Description within each offer */
+
 .offerDesc {
-    color: #fff; /* Text color */
+    color: #fff;
 }
 
 .offerDesc h1 {
-    font-size: 24px; /* Increase font size for headings */
-    margin-bottom: 10px; /* Space below the heading */
+    font-size: 24px; 
+    margin-bottom: 10px; 
 }
 
 .offerDesc p {
-    font-size: 16px; /* Increase font size for paragraphs */
-    line-height: 1.5; /* Increases line height for better readability */
-    margin: 0; /* Removes default margin */
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin: 0; 
 }
 
-/* Optional: Media query for responsiveness */
+
 @media (max-width: 768px) {
     .eachOffer {
-        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+        flex: 1 1 100%; 
     }
 }
-/* Ensure the slider container is responsive */
+/
 .slider-container {
-    overflow: hidden; /* Hides any overflow from the slider */
-    width: 100%; /* Full width */
-    position: relative; /* For absolute positioning of slider elements */
+    overflow: hidden; 
+    width: 100%; 
+    position: relative; 
 }
 
-/* Style for the slider content */
+
 .slider-content {
-    display: flex; /* Align items horizontally */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+    display: flex; 
+    flex-wrap: nowrap; 
+    transition: transform 0.5s ease-in-out; 
 }
 
 /* Each slide within the slider */
