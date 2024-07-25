@@ -1,0 +1,968 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 50px;
+    color: #fff;
+    background: transparent;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+}
+
+nav img {
+    /* display: none; */
+    width: 120px;
+    height: auto;
+}
+
+.search {
+    height: 30px;
+    width: 30px;
+}
+
+
+.links ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.wind p {
+    font-size: 12px;
+    font-weight: 500;
+    /* color: #fff; */
+}
+
+.wind p span {
+    font-weight: 1000;
+}
+
+.temp {
+    justify-content: space-between;
+}
+
+.temp p {
+    font-size: 16px;
+}
+
+.marsIntro {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.marsIntro img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.marsIntro img:nth-child(2) {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.marsIntro .text {
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    color: #fff;
+    margin: 100px 0;
+}
+
+.marsIntro .text p {
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
+.marsIntro .text h1 {
+    font-size: 160px;
+}
+
+.marsIntro .astroImage {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.specs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 120px;
+}
+
+.spec {
+    border: 1px solid #B79A88;
+    padding: 10px;
+}
+
+.specText {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.specText i {
+    color: #B79A88;
+}
+
+.spec p {
+    color: #B79A88;
+    font-size: 12px;
+}
+
+.specText p {
+    font-size: 16px;
+}
+
+.heading {
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+.heading h2 {
+    font-size: 36px;
+}
+
+.heading p {
+    color: #B79A88;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 100px;
+    gap: 100px;
+}
+
+.adventure:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/featured/space-sjryfre8k8f6i3ge.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adventure:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-photo/galactic-night-sky-astronomy-science-combined-generative-ai_188544-9656.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714089600&semt=ais');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adventure:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adventure {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.adventure .text {
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.adventure img {
+    width: 50%;
+    position: absolute;
+    top: -50px;
+}
+
+.adventure:nth-child(2) img {
+    width: 60%;
+    top: -65px;
+}
+
+.adventure button {
+    background-color: #B79A88;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+}
+
+.bioSuit {
+    display: flex;
+    padding: 50px 100px;
+}
+
+.suitImage {
+    width: 60%;
+}
+
+.suitImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.suitText {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.enhacedLuxury {
+    color: #B79A88;
+    font-size: 12px;
+}
+
+.suitText .title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #B79A88;
+    padding: 10px 0;
+}
+
+.suitText .title h2 {
+    font-size: 36px;
+    line-height: 35px;
+}
+
+.suitText .title p {
+    color: #B79A88;
+    letter-spacing: 3px;
+}
+
+.suitText hr {
+    width: 10%;
+    background-color: #B79A88;
+}
+
+.suitText .description {
+    width: 80%;
+    align-self: end;
+    margin-top: 20px;
+}
+
+.suitText .description .desc {
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #B79A88;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+
+.highlight {
+    border: 1px solid #B79A88;
+    height: 100px;
+    flex-direction: column;
+}
+
+.highlight h2 {
+    font-size: 30px;
+}
+
+.highlight p {
+    font-family: "Bebas Neue";
+    color: #B79A88;
+}
+
+.btn {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-content: space-between;
+}
+
+.btn button {
+    border: 1px solid #B79A88;
+    padding: 10px 30px;
+    background-color: transparent;
+    width: 80%;
+    color: #B79A88;
+}
+
+.btn .iconBtn {
+    border: 1px solid #B79A88;
+    width: 20%;
+    height: 100%;
+}
+.worldNav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 70%;
+    border-bottom: 1px solid #B79A88;
+}
+
+.worldNav ul li {
+    padding: 20px 10px;
+}
+
+.worldNav ul li:nth-child(2) {
+    border-bottom: 3px solid #B79A88;
+    height: 100%;
+}
+
+.planetDescription {
+    display: flex;
+    padding: 50px 100px;
+}
+
+.planetText {
+    width: 40%;
+}
+
+.planetText .title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.planetText .title h2 {
+    font-size: 36px;
+    line-height: 35px;
+}
+
+.planetText .title p {
+    color: #B79A88;
+    letter-spacing: 3px;
+}
+
+.description {
+    align-self: end;
+    margin-top: 20px;
+}
+
+.planetDescription .description .desc {
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #B79A88;
+}
+
+.planetDescription .btn {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.planetDescription .btn button {
+    width: 70%;
+}
+
+.planetDescription .iconBtn {
+    border: 1px solid #B79A88;
+    width: 15%;
+    height: 100%;
+}
+
+.planetImage {
+    width: 60%;
+}
+
+.planetImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonials {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.topTestimonials {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+
+.testimonials img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottomTestimonials {
+    background-color: red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.bottomTestimonials img:nth-child(2) {
+    height: 110%;
+}
+
+.topTestimonials img:nth-child(2) {
+    height: 110%;
+}
+
+.testimonials .texts {
+    padding: 100px;
+}
+
+.testimonials .texts .testimonialHeading {
+    color: #B79A88;
+    letter-spacing: 3px;
+}
+
+.testimonials .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #B79A88;
+}
+
+.testimonials .title .btns {
+    display: flex;
+    width: 20%;
+}
+
+.testimonials .title .btns .iconBtn {
+    display: flex;
+    border: 1px solid #B79A88;
+    width: 50%;
+}
+
+.testimonials hr {
+    background-color: #B79A88;
+    width: 20%;
+}
+
+.testimonials p {
+    font-family: sans-serif;
+    color: #B79A88;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 150px;
+}
+
+.trip {
+    flex-direction: column;
+}
+
+.trip img {
+    width: 30%;
+    height: auto;
+}
+
+.trip a {
+    font-size: 8px;
+}
+
+.trip h2 {
+    font-size: 24px;
+    color: #B79A88;
+    margin: 10px;
+}
+
+.trip p {
+    font-size: 12px;
+    padding: 0 30px;
+    color: #B79A88;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images//Half-Moon.png');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+footer img {
+    width: 20%;
+}
+/* Container for the slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Content within the slider */
+.slider-content {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 10px 0; /* Adjust padding if needed */
+}
+
+/* Individual slider item */
+.slider-single {
+    flex: 0 0 auto; /* Prevents flex items from shrinking or growing */
+    width: 250px; /* Adjust width of each item */
+    margin: 0 10px; /* Space between items */
+    text-align: center; /* Center-align text */
+}
+/* Container for all offers */
+.offers {
+    display: flex; /* Aligns children (eachOffer) horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    justify-content: space-around; /* Distributes space between and around items */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the container */
+    background-color: #333; /* Optional: background color */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Individual offer item */
+.eachOffer {
+    display: flex;
+    flex-direction: column; /* Aligns items (image and description) vertically */
+    align-items: center; /* Center-aligns children horizontally */
+    text-align: center; /* Center-aligns text */
+    background-color: #444; /* Optional: background color for each offer */
+    padding: 20px; /* Padding inside each offer */
+    border-radius: 10px; /* Optional: rounded corners */
+    flex: 1 1 calc(33% - 40px); /* Responsive sizing: 3 items per row with space for gaps */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Image styling within each offer */
+.eachOffer img {
+    width: 100px; /* Adjust width of icons */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Description within each offer */
+.offerDesc {
+    color: #fff; /* Text color */
+}
+
+.offerDesc h1 {
+    font-size: 24px; /* Increase font size for headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.offerDesc p {
+    font-size: 16px; /* Increase font size for paragraphs */
+    line-height: 1.5; /* Increases line height for better readability */
+    margin: 0; /* Removes default margin */
+}
+
+/* Optional: Media query for responsiveness */
+@media (max-width: 768px) {
+    .eachOffer {
+        flex: 1 1 100%; /* Stacks items vertically on smaller screens */
+    }
+}
+/* Ensure the slider container is responsive */
+.slider-container {
+    overflow: hidden; /* Hides any overflow from the slider */
+    width: 100%; /* Full width */
+    position: relative; /* For absolute positioning of slider elements */
+}
+
+/* Style for the slider content */
+.slider-content {
+    display: flex; /* Align items horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+/* Each slide within the slider */
+.slider-single {
+    min-width: 100%; /* Ensures each slide takes up the full width of the container */
+    box-sizing: border-box; /* Includes padding and border in element’s total width */
+    display: flex; /* Aligns children (image and text) vertically */
+    flex-direction: column; /* Aligns children (image and text) vertically */
+    align-items: center; /* Center-aligns children horizontally */
+    justify-content: center; /* Center-aligns children vertically */
+    padding: 10px; /* Padding around each slide */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Style for images in the slider */
+.slider-single-image {
+    max-width: 100%; /* Limits width to container's width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    max-height: 400px; /* Limits height to avoid excessive height */
+    border-radius: 10px; /* Optional: rounded corners for a modern look */
+}
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Adjust the width of the slider container */
+    margin: 0 auto; /* Center the container */
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%; /* 4 photos side-by-side, adjust based on number of photos */
+}
+
+.slider-single {
+    flex: 1 0 25%; /* Each photo takes up 25% of the container's width */
+    box-sizing: border-box;
+    padding: 5px; /* Reduced padding */
+    text-align: center; /* Center text */
+}
+
+.slider-single img {
+    width: 100%; /* Adjust image width to fit slider */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images cover the container */
+}
+
+.slider-single-title {
+    font-size: 16px; /* Adjust font size for titles */
+}
+
+.slider-single-likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px; /* Adjust margin */
+}
+
+.slider-single-likes i {
+    color: #B79A88; /* Icon color */
+    margin-right: 5px;
+}
+
+.slider-single-likes p {
+    font-size: 12px; /* Adjust font size for descriptions */
+    color: #B79A88; /* Text color */
+}
+
+/* Title and description styles */
+.slider-single-title {
+    font-size: 20px; /* Adjust as needed */
+    margin: 10px 0; /* Margin above and below the title */
+}
+
+.slider-single-likes {
+    font-size: 16px; /* Adjust as needed */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .slider-single-title {
+        font-size: 18px; /* Adjust title size for smaller screens */
+    }
+
+    .slider-single-likes {
+        font-size: 14px; /* Adjust text size for smaller screens */
+    }
+}
+
+.slider-container {
+    overflow: hidden; 
+    width: 100%
+    position: relative; 
+}
+
+.slider-content {
+    display: flex; 
+    flex-wrap: nowrap; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+.slider-single {
+    min-width: 100%; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0px; 
+    text-align: center; 
+}
+
+
+.slider-single-image {
+    max-width: 100%; /
+    height: auto; 
+    object-fit: cover; 
+    max-height: 100px; 
+    border-radius: 0px; 
+}
+
+
+.slider-single-title {
+    font-size: 20px; /
+    margin: 10px 0; 
+}
+
+.slider-single-likes {
+    font-size: 16px; 
+}
+
+
+@media (max-width: 768px) {
+    .slider-single-title {
+        font-size: 18px; 
+    }
+
+    .slider-single-likes {
+        font-size: 14px; /
+    }
+}
+.slider-container {
+    overflow: hidden; 
+    width: 100%;
+    position: relative; 
+}
+
+
+.slider-content {
+    display: flex; 
+    flex-wrap: nowrap; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Each slide within the slider */
+.slider-single {
+    min-width: 100%; 
+    box-sizing: border-box; /
+    display: flex; 
+    flex-direction: column; /
+    align-items: center; 
+    justify-content: center; 
+    padding: 0%; 
+    text-align: center; 
+}
+
+
+.slider-single-image {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    max-height: 400px; 
+    border-radius: 0%; 
+    padding: 0px;
+}
+
+.slider-single-title {
+    font-size: 20px; 
+    margin: 10px 0; 
+}
+
+.slider-single-likes {
+    font-size: 16px; 
+}
+
+
+@media (max-width: 768px) {
+    .slider-single-title {
+        font-size: 18px; 
+    }
+
+    .slider-single-likes {
+        font-size: 14px; 
+    }
+}
+
+.slider-single img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0px;
+    padding: 0px; 
+}
+
+.slider-single h1 {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+
+.slider-single a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider-single i {
+    margin-right: 5px; 
+}
+
+
+.sectionHeader {
+    text-align: center;
+    margin: 20px 0; 
+}
+
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.joinSection {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.joinDesc {
+    margin-bottom: 20px;
+}
+
+.sectionHeader {
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+.sectionPara {
+    font-size: 1.25rem; 
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.primaryBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.25rem; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Links Container Styling */
+.footerlinksContainer {
+    background-color: #222;
+    color: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.footerAboutus {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 300px;
+}
+
+.footerAboutus img {
+    width: 60%;
+    filter: brightness(0) invert(1);
+    margin-bottom: 15px;
+}
+
+.darkPara {
+    font-size: 1rem; 
+    line-height: 1.6;
+}
+
+.footersociallinkContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.sociallink {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.footerlink {
+    flex: 1;
+    margin: 0 20px;
+    max-width: 300px;
+}
+
+.linkTitle {
+    font-size: 1.75rem; 
+    margin-bottom: 10px;
+}
+
+.footerlink p {
+    font-size: 1rem; 
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.footerCopyright {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.875rem; 
+}
+
+.footerCopyright a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footerCopyright a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    margin: 20% 0;
+} 
